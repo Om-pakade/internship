@@ -1,0 +1,103 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 20px;
+    background-color: #ddd;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+a {
+    color: #007BFF;
+}
+
+.container ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+.container li {
+    margin-bottom: 5px;
+}
+
+.container img {
+    display: block;
+    margin: 0 auto;
+}
+
+.container p:last-child {
+    margin-bottom: 0;
+}
+
+/* Add media query to adjust layout on smaller screens */
+@media (max-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+    .profile-pic {
+        float: none;
+        margin: 0 auto 20px;
+    }
+}
